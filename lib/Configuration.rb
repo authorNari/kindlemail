@@ -61,7 +61,7 @@ class Configuration
     File.open(EMAIL_CONF_FILE, "w") do |file|
       file.puts "smtp_oauth_token: #{token}"
       file.puts "smtp_oauth_token_secret: #{token_secret}"
-      file.puts "email #{email}"
+      file.puts "email: #{email}"
     end
     puts "Complete!"
   end
